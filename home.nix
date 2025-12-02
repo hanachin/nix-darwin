@@ -10,6 +10,7 @@
   home.packages = with pkgs; [
     ghq
     peco
+    pinentry_mac
     tig
     vscode
   ];
@@ -90,4 +91,9 @@
     "AUTO_PUSHD"
     "CORRECT"
   ];
+  services.gpg-agent.enable = true;
+  services.gpg-agent.enableBashIntegration = true;
+  services.gpg-agent.enableSshSupport = true;
+  services.gpg-agent.enableZshIntegration = true;
+  services.gpg-agent.pinentry.package = pkgs.pinentry_mac;
 }

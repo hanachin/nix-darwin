@@ -10,6 +10,7 @@
   homebrew.casks = [
     { name = "docker-desktop"; }
     { name = "logi-options+"; }
+    { name = "keybase"; }
   ];
 
   nixpkgs.config.allowUnfree = true;
