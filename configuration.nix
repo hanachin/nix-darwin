@@ -12,6 +12,7 @@
     { name = "logi-options+"; }
     { name = "keybase"; }
     { name = "firefox"; }
+    { name = "google-chrome"; }
   ];
 
   nixpkgs.config.allowUnfree = true;
