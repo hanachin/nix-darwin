@@ -11,6 +11,7 @@
     { name = "docker-desktop"; }
     { name = "logi-options+"; }
     { name = "keybase"; }
+    { name = "firefox"; }
   ];
 
   nixpkgs.config.allowUnfree = true;
