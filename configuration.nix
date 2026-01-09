@@ -13,6 +13,7 @@
     { name = "keybase"; }
     { name = "firefox"; }
     { name = "google-chrome"; }
+    { name = "steam"; }
   ];
 
   nixpkgs.config.allowUnfree = true;
