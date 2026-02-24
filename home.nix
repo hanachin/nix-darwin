@@ -1,4 +1,4 @@
-{ config, pkgs, username, ... }:
+{ llm-agents, config, pkgs, username, ... }:
 
 {
   home.file."${config.xdg.configHome}/zsh/functions/spectrum" = {
@@ -13,7 +13,11 @@
     pinentry_mac
     tig
     vscode
-  ];
+  ] ++ (with llm-agents.packages.${pkgs.stdenv.hostPlatform.system}; [
+    claude-code
+    codex
+    gemini-cli
+  ]);
   home.sessionVariables = {
     EDITOR = "emacs -nw";
   };

@@ -8,6 +8,7 @@
 
   homebrew.enable = true;
   homebrew.casks = [
+    { name = "claude"; }
     { name = "docker-desktop"; }
     { name = "logi-options+"; }
     { name = "keybase"; }
