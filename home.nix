@@ -28,6 +28,9 @@
   };
   home.username = "${username}";
   programs.direnv.enable = true;
+  programs.direnv.package = pkgs.direnv.overrideAttrs (_: {
+    doCheck = false;
+  });
   programs.direnv.nix-direnv.enable = true;
   programs.emacs.enable = true;
   programs.emacs.extraPackages = epkgs:
