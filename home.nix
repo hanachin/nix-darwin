@@ -70,6 +70,10 @@
   };
   programs.git.signing.signByDefault = true;
   programs.git.lfs.enable = true;
+  programs.git.ignores = [
+    ".direnv"
+    ".DS_Store"
+  ];
   programs.gpg.enable = true;
   programs.gpg.publicKeys = [
     {
