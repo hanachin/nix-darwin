@@ -18,6 +18,8 @@
     codex
     copilot-cli
     gemini-cli
+    herdr
+    pi
   ]);
   home.sessionVariables = {
     EDITOR = "emacs -nw";
