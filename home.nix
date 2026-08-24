@@ -11,6 +11,7 @@
     ghq
     peco
     pinentry_mac
+    ripgrep
     tig
     vscode
   ] ++ (with llm-agents.packages.${pkgs.stdenv.hostPlatform.system}; [
