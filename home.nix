@@ -51,6 +51,7 @@
       };
     };
   };
+  programs.gh.extensions = [pkgs.gh-stack];
   programs.git.attributes = [
     "Gemfile diff=ruby"
     "*.rake diff=ruby"
